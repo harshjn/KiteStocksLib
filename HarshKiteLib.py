@@ -24,8 +24,8 @@ import logging
 from kiteconnect import KiteConnect
 import urllib3
 # logging.basicConfig(level=logging.WARNING)
-api_key = "ynb8hrnktu12dza9"
-api_secret='e5x67qy5j99uoag1t31i7wkwgz24l5qg';
+api_key = "__"
+api_secret='__';
 
 with open('acc_tkn.txt', 'r') as file:
     acc_tkn = file.read()
@@ -36,7 +36,7 @@ kite = KiteConnect(api_key=api_key,access_token=acc_tkn)
 if acc_tkn==[]:
     kite = KiteConnect(api_key=api_key)
 
-    request_token="buLWdKNdnizQlvRlTbo0xtw12xrgBEyQ"
+    request_token="__"
     gen_ssn = kite.generate_session(request_token, api_secret)
     acc_tkn=gen_ssn['access_token']
     print('access token is:')
